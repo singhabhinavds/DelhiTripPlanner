@@ -1,0 +1,80 @@
+/* 
+    Document   : login
+    Created on : Oct 24, 2013, 6:32:16 AM
+    Author     : singhabhinavds
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.container{
+    position:absolute;
+    margin: 150px 0px 0px 500px;
+    width: 380px;
+    height: 250px;
+    background-image: url(../images/ticket.png);
+}
+
+.container ul{
+    float: none;
+    margin: 0px;
+    padding: 20px 20px;
+    list-style: none;
+}
+
+.container ul li{
+    position: relative;
+    margin: 0px 0px 0px 15px;
+    padding: 0px 10px;
+    display: inline;
+}
+
+.container ul li #email{
+    position: relative;
+    padding: 3px;
+    border-radius: 17px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.9), 0 0 2px rgba(0,0,0,.9);
+    margin:8px 10px 10px 40px;
+    background:none;
+    font-family:Georgia, "Times New Roman", Times, serif;
+    color:#990000;
+    width:172px;
+    height:20px;
+    float:none; 
+}
+.container ul li #password{position:relative;
+                         padding:3px;
+                         border-radius:17px;
+                         box-shadow: 1px 1px 2px rgba(0,0,0,.9), 0 0 2px rgba(0,0,0,.9);
+                         margin:4px 10px 10px 10px;
+                         background:none;
+                         font-family:Georgia, "Times New Roman", Times, serif;
+                         color:#990000;
+                         width:172px;
+                         height:20px;
+                         float:none;
+}
+
+.container ul li #submit{
+    margin:29px 0 0 60px;
+    width:150px;
+    height:30px;
+    padding:6px;
+    border:thick #CC9966;
+}									
+.container ul li input:hover{background-color:#CCCCCC;
+                             text-decoration:underline;
+                             text-shadow:#000000;
+}
+.container #signup{
+    margin:-24px 0 0 105px;
+    width:150px;
+    height:30px;
+    padding:6px;
+    border:thick #CC9966;
+}									
+.container input:hover{background-color:#CCCCCC;
+                       text-decoration:underline;
+                       text-shadow:#000000;
+                       box-shadow:3px 3px 3px black;
+
+}
