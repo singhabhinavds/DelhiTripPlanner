@@ -187,6 +187,17 @@ include_once $include_folder . '/header.php';
             TIMETABLE FOR BUS
             <hr />
         </div>
+        <div id='timetable_search'>
+            Search with Bus Number
+
+            <form action ="bus_information.php" method="POST">
+                <div>
+                    <input type="text" name="bus_code" placeholder="bus number">
+                </div>
+                <input type="submit" value="show timetable">
+            </form>
+
+        </div>
     </ul>
 </div>
 

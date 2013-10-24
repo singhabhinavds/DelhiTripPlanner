@@ -21,7 +21,7 @@
         </ul>
     </form>
     <form action='../signup/signup_form.php' method='GET'>
-        <input type='submit' name='SIGNUP' value='SIGNUP' id='signup' title='signup' />
+        <input type='submit' name='SIGNUP' value='Dont have an account ? Create one!' id='signup' title='signup' />
     </form>
 </div>
     

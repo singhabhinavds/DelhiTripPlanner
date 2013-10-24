@@ -34,3 +34,14 @@
 hr{
     margin-left: 0%;
 }
+
+#timetable_search{
+    font-size: 20px;
+}
+
+#timetable_search input[type=text]{
+    width: 50%;
+    height: 4%;
+    margin-bottom: 20px;
+}
+
