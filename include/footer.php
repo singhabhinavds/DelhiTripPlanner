@@ -2,22 +2,22 @@
 
     <ul class="footer_list">
         <li>
-            <a href="#" class="current">Home</a>
+            <a href="<?php echo $home_folder; ?>/home.php" class="current">Home</a>
         </li>
         <li>
-            <a href="#">Tickets</a>
+            <a href="<?php echo $home_folder; ?>/tickets.php">Tickets</a>
         </li>
         <li>
-            <a href="#">Getting Around</a>
+            <a href="<?php echo $home_folder; ?>/getting_around.php">Getting Around</a>
         </li>
         <li>
-            <a href="#">News & Events</a>
+            <a href="<?php echo $home_folder; ?>/news_events.php">News & Events</a>
         </li>
         <li>
-            <a href="#">Facilities</a>
+            <a href="<?php echo $home_folder; ?>/facilities.php">Facilities</a>
         </li>
         <li class="last">
-            <a href="#">About Us</a>
+            <a href="<?php echo $home_folder; ?>/about_us.php">About Us</a>
         </li>
     </ul> 
 

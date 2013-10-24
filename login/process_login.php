@@ -1,7 +1,7 @@
 <?php
 
 include_once '../config.php';
-include_once  '../'.$include_folder.'/tables.php';
+include_once $include_folder.'/tables.php';
 
 if(isset($_POST['user_email']) && isset($_POST['user_password'])){
     $array = array('user_email' => $_POST['user_email']);

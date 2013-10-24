@@ -7,7 +7,10 @@
 */
 
 #footer {
+    position: absolute;
     width: 100%;
+    bottom: 0px;
+    left: 0px;
     padding: 20px 0 20px 0;
     text-align: center;
     border-top: 1px solid #8b8a8b;
