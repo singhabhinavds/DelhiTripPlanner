@@ -16,7 +16,7 @@
                 Password : <input type="password" name="user_password" id='password'>
             </li>
             <li>
-                <input type='submit' name='Login' value='Login' title='Login' id='submit'>
+                <input type='submit' name='LOGIN' value='LOGIN' title='LOGIN' id='submit'>
             </li>
         </ul>
     </form>
