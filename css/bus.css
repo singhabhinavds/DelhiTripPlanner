@@ -1,0 +1,34 @@
+/* 
+    Document   : bus
+    Created on : Oct 24, 2013, 6:06:47 PM
+    Author     : singhabhinavds
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#bus_code_header{
+    margin-left: 46%;
+    font-size: 33px;
+    width: 21%;
+    height: 6%;
+    text-align: center;
+    color: white;
+    background-color: red;
+}
+
+.bus_info{
+   font-size: 15px;
+   text-align: center;
+   color: white;
+}
+
+#bus_code_station{
+    width:35%;
+    height: 5%;
+    margin-left: 41%;
+    margin-top: 1%;
+    text-align: center;
+    background-color: grey;
+    font-size: 150%;
+    line-height: 35px;
+}
