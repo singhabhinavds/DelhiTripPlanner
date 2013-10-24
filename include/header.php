@@ -1,4 +1,4 @@
-<?php include_once '../config.php'; 
+<?php
  session_start();
 ?>
 <html>
@@ -7,7 +7,8 @@
             Welcome To Delhi Trip Planner
         </title>
         
-        <link rel='stylesheet' href='../<?php echo $css_folder; ?>/header.css' />
+        <link rel='stylesheet' href='<?php echo $css_folder; ?>/header.css' />
+        <link rel='stylesheet' href='<?php echo $css_folder; ?>/footer.css' />
 
         
     </head>

@@ -1,6 +1,5 @@
 <?php
-$css_folder = 'css';
-$include_folder = 'include';
-
+$css_folder = '/NetBeansProjects/DelhiTrip/css';
+$include_folder = '/Library/WebServer/Documents/NetBeansProjects/DelhiTrip/include';
 ?>
 
