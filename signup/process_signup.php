@@ -11,17 +11,22 @@ if(isset($_POST['user_email']) && isset($_POST['user_password']) && isset($_POST
             $if_successful = $user_table->insert(array('user_email'=>$_POST['user_email'],'user_password'=>$_POST['user_password']));
             if($if_successful){
                 echo 'Successfully registered! Now you can log in!';
+                header('Location: http://localhost/NetBeansProjects/DelhiTrip/home.php?msg=signup_success');
             }else{
                 echo 'Something went wrong. Please notify the webmaster!';
+                header('Location: http://localhost/NetBeansProjects/DelhiTrip/home.php?msg=signup_error');
             }
         }else{
             echo 'Email already registered! Please choose a different one!';
+            header('Location: http://localhost/NetBeansProjects/DelhiTrip/home.php?msg=signup_already_registered');
         }
     }else{
         echo 'Both the passwords do not match . Please fill the form again!';
+        header('Location: http://localhost/NetBeansProjects/DelhiTrip/home.php?msg=signup_error');
     }
 }else{
     echo 'You need to fill all the details ! please fill the signup form again!';
+    header('Location: http://localhost/NetBeansProjects/DelhiTrip/home.php?msg=signup_error');
 }
 
 ?>

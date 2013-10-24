@@ -45,3 +45,9 @@ hr{
     margin-bottom: 20px;
 }
 
+.message{
+    color: white;
+    display: block;
+    text-align:center;
+    margin: 0 auto;
+}

@@ -3,7 +3,25 @@ include_once 'config.php';
 include_once $include_folder . '/header.php';
 ?>
 <link rel='stylesheet' href='<?php echo $css_folder; ?>/home.css' />
-
+<div class='message'>
+    <?php
+    if (isset($_GET['msg'])) {
+        if ($_GET['msg'] == 'signup_success') {
+            echo 'Successfully registered! Now you can log in!';
+        } elseif ($_GET['msg'] == 'signup_error') {
+            echo 'Something went wrong. Please notify the webmaster!';
+        } elseif ($_GET['msg'] == 'signup_already_registered') {
+            echo 'Email already registered! Please choose a different one!';
+        }elseif ($_GET['msg'] == 'login_success') {
+            echo 'You have successfully logged in !';
+        }elseif ($_GET['msg'] == 'login_error') {
+            echo 'Your login email / password was wrong!';
+        }elseif ($_GET['msg'] == 'login_unregistered') {
+            echo 'Your email is not registered with us ! please sign up !';
+        }
+    }
+    ?>
+</div>
 
 <div class='gallery'>
     <img src='images/bus.jpg' />
