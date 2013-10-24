@@ -7,7 +7,8 @@
 */
 
 #footer {
-    position: absolute;
+    clear: both;
+    position: relative;
     width: 100%;
     bottom: 0px;
     left: 0px;
