@@ -63,9 +63,10 @@
     padding:6px;
     border:thick #CC9966;
 }									
-.container ul li input:hover{background-color:#CCCCCC;
-                             text-decoration:underline;
-                             text-shadow:#000000;
+.container ul li input:hover, #signup{
+    background-color:#CCCCCC;
+    text-decoration:underline;
+    text-shadow:#000000;
 }
 .container #signup{
     margin:-6% 0 0 23%;
@@ -73,10 +74,14 @@
     height:16%;
     padding:6px;
     border:thick #CC9966;
+    font-family: "Times New Roman", Times, serif;
+    text-decoration: none;
+    color: black;
 }									
-.container input:hover{background-color:#CCCCCC;
-                       text-decoration:underline;
-                       text-shadow:#000000;
-                       box-shadow:3px 3px 3px black;
+.container input:hover, #signup{
+    background-color:#CCCCCC;
+    text-decoration:underline;
+    text-shadow:#000000;
+    box-shadow:3px 3px 3px black;
 
 }

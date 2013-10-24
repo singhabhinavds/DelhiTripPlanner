@@ -20,9 +20,7 @@
             </li>
         </ul>
     </form>
-    <form action='../signup/signup_form.php' method='GET'>
-        <input type='submit' name='SIGNUP' value='Dont have an account ? Create one!' id='signup' title='signup' />
-    </form>
+        <a href='../signup/signup_form' id='signup'>Dont have an account ? Create one!</a>
 </div>
     
     <?php include_once $include_folder.'/footer.php'; ?>
