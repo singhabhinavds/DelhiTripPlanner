@@ -25,3 +25,4 @@ session_start();
 
             </ul>   
         </div>
+        <div class="content">

@@ -58,3 +58,7 @@ body{
     left: 0;
     background: url(../images/menu_hover_left.jpg) no-repeat;
 }
+
+.content{
+    min-height: 62%;
+}

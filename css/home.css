@@ -9,6 +9,7 @@
 
 .gallery{
     height: 50%;
+    padding-bottom: 2%;
 }
 
 .gallery img{
@@ -18,11 +19,12 @@
 }
 .journey_planner, .newsfeed, .timetable{
     color: #FFFFFF;
-    background-color: #990000;
+    background-color: grey;
     margin-left: 3%;
     float: left;
-    width: 30%;
+    width: 28%;
     position: relative;
+    margin: 2% 2% 2% 2%; 
 }
 
 #journey_planner_header, #timetable_header , #newsfeed_header{
