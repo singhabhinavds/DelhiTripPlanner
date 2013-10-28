@@ -12,11 +12,11 @@ include_once $include_folder . '/header.php';
             echo 'Something went wrong. Please notify the webmaster!';
         } elseif ($_GET['msg'] == 'signup_already_registered') {
             echo 'Email already registered! Please choose a different one!';
-        }elseif ($_GET['msg'] == 'login_success') {
+        } elseif ($_GET['msg'] == 'login_success') {
             echo 'You have successfully logged in !';
-        }elseif ($_GET['msg'] == 'login_error') {
+        } elseif ($_GET['msg'] == 'login_error') {
             echo 'Your login email / password was wrong!';
-        }elseif ($_GET['msg'] == 'login_unregistered') {
+        } elseif ($_GET['msg'] == 'login_unregistered') {
             echo 'Your email is not registered with us ! please sign up !';
         }
     }
@@ -200,22 +200,38 @@ include_once $include_folder . '/header.php';
 
 </div>
 <div class='timetable'>
-    <ul>
-        <div id='timetable_header'>
-            TIMETABLE FOR BUS
-            <hr />
-        </div>
-        <div id='timetable_search'>
-            Search with Bus Number
 
-            <form action ="bus_information.php" method="POST">
-                <div>
-                    <input type="text" name="bus_code" placeholder="bus number">
-                </div>
-                <input type="submit" value="show timetable">
-            </form>
 
-        </div>
+    <ul class="tabs">
+        <li>
+            <input type="radio" checked name="tabs" id="tab1">
+            <label for="tab1">Search with Bus Number</label>
+            <div id="tab-content1" class="tab-content">
+
+
+                <form action ="bus_information.php" method="POST">
+                    <div>
+                        <input type="text" name="bus_code" placeholder="bus number">
+                    </div>
+                    <input type="submit" value="show bus route">
+                </form>
+
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="tabs" id="tab2">
+            <label for="tab2">Search With Bus Station</label>
+            <div id="tab-content2" class="tab-content">
+                
+                <form action ="bus_information/bus_station_info.php" method="POST">
+                    <div>
+                        <input type="text" name="station_name" placeholder='station name'>
+                    </div>
+                    <input type="submit" value="show buses">
+                </form>
+
+            </div>
+        </li>
     </ul>
 </div>
 

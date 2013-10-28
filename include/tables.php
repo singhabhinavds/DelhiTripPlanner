@@ -15,4 +15,6 @@ $database = $connection->DelhiTrip;
 //all the tables are here
 $route_info = $database->route_info;
 $user_table = $database->user_table;
+$routes = $database->routes;
+$stops = $database->stops;
 ?>
