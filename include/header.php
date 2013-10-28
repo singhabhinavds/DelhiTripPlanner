@@ -9,6 +9,7 @@ session_start();
 
         <link rel='stylesheet' href='<?php echo $css_folder; ?>/header.css' />
         <link rel='stylesheet' href='<?php echo $css_folder; ?>/footer.css' />
+        <script type="text/javascript" src="js/jquery-2.0.3.js"></script>
 
 
     </head>

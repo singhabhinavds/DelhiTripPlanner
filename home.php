@@ -3,6 +3,8 @@ include_once 'config.php';
 include_once $include_folder . '/header.php';
 ?>
 <link rel='stylesheet' href='<?php echo $css_folder; ?>/home.css' />
+<script type="text/javascript" src="js/home.js"></script>
+
 <div class='message'>
     <?php
     if (isset($_GET['msg'])) {
@@ -213,7 +215,9 @@ include_once $include_folder . '/header.php';
                     <div>
                         <input type="text" name="bus_code" placeholder="bus number">
                     </div>
-                    <input type="submit" value="show bus route">
+                    <div id="submit_bus_code">
+                        Show Bus Route
+                    </div>
                 </form>
 
             </div>
@@ -222,7 +226,7 @@ include_once $include_folder . '/header.php';
             <input type="radio" name="tabs" id="tab2">
             <label for="tab2">Search With Bus Station</label>
             <div id="tab-content2" class="tab-content">
-                
+
                 <form action ="bus_information/bus_station_info.php" method="POST">
                     <div>
                         <input type="text" name="station_name" placeholder='station name'>
