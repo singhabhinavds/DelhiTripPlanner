@@ -28,6 +28,27 @@ include_once $include_folder . '/header.php';
 <div class='gallery'>
     <img src='' />
 </div>
+<div id='bus_timetable'>
+    Bus Start and Stop Stations <br />
+    <?php 
+        include_once $include_folder . '/tables.php';
+        
+        $search_buses_routes = $routes->distinct('route_id');
+        for($i = 0;$i < count($search_buses_routes); $i++){
+            echo 'Bus Number ';
+            echo $search_buses_routes[$i];
+            echo ' : ';
+            $start_stations = $routes->findOne(array('route_id' => $search_buses_routes[$i], 'stop_sequence'=> '1'));
+            echo $start_stations['stop_id'];
+            echo ' ==> ';
+            $stop_station = $routes->findOne(array('route_id' => $search_buses_routes[$i], 'last_station' => '1'));
+            echo $stop_station['stop_id'];
+            echo '<br />';
+        }
+
+        
+    ?>
+</div>
 <form id='journey_form' action='#' method='POST'>
 <div class="journey_planner">
     <ul>

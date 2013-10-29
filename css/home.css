@@ -1,6 +1,12 @@
+body{
+    width:100%;
+}
 .gallery{
-    height: 50%;
+    height: 49%;
+    width: 70%;
     padding-bottom: 2%;
+    border: 1px solid white;
+    margin-bottom: 1%;
 }
 
 .gallery img{
@@ -194,4 +200,15 @@ select{
         0 0 16px rgba(0,0,0,0.1); 
     height: 34px;
     -webkit-appearance: none;
+}
+
+#bus_timetable{
+    position: absolute;
+    border: 1px solid white;
+    float: right;
+    width: 25%;
+    height: 42%;
+    top: 8%;
+    right: 3%;
+    background-color: grey;
 }
