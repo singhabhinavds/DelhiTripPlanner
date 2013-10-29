@@ -3,7 +3,7 @@ include_once 'config.php';
 include_once $include_folder . '/header.php';
 ?>
 <link rel='stylesheet' href='<?php echo $css_folder; ?>/home.css' />
-<script type="text/javascript" src="js/home.js"></script>
+<script type="text/javascript" src="<?php echo $js_folder; ?>/home.js"></script>
 
 <div class='message'>
     <?php
@@ -26,8 +26,9 @@ include_once $include_folder . '/header.php';
 </div>
 
 <div class='gallery'>
-    <img src='images/bus.jpg' />
+    <img src='' />
 </div>
+<form id='journey_form' action='#' method='POST'>
 <div class="journey_planner">
     <ul>
 
@@ -195,12 +196,16 @@ include_once $include_folder . '/header.php';
         </div>
 
 
-        <p class="searchOptions"><a href="#" id="MoreSearchOptions">More search options</a></p>
-        <input type="submit" value="Show journey" class="submitButton" name="jpSubmit">
+        <p class="searchOptions"><a href="#" id="MoreSearchOptions">Advanced Search</a></p>
+        
+        <div id='submit_journey' class="submit_bus_code" >
+                        Show Journey
+                    </div>
 
     </ul>
-
 </div>
+    </form>
+
 <div class='timetable'>
 
 
@@ -211,11 +216,11 @@ include_once $include_folder . '/header.php';
             <div id="tab-content1" class="tab-content">
 
 
-                <form action ="bus_information.php" method="POST">
+                <form action ="bus_information.php" method="POST" id='bus_information'>
                     <div>
                         <input type="text" name="bus_code" placeholder="bus number">
                     </div>
-                    <div id="submit_bus_code">
+                    <div class="submit_bus_code" id='submit_bus_information'>
                         Show Bus Route
                     </div>
                 </form>
@@ -227,11 +232,13 @@ include_once $include_folder . '/header.php';
             <label for="tab2">Search With Bus Station</label>
             <div id="tab-content2" class="tab-content">
 
-                <form action ="bus_information/bus_station_info.php" method="POST">
+                <form action ="bus_information/bus_station_info.php" method="POST" id='bus_station_info'>
                     <div>
                         <input type="text" name="station_name" placeholder='station name'>
                     </div>
-                    <input type="submit" value="show buses">
+                    <div id='submit_bus_station_info' class="submit_bus_code" >
+                        Show Buses
+                    </div>
                 </form>
 
             </div>
