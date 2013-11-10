@@ -49,7 +49,7 @@ include_once $include_folder . '/header.php';
         
     ?>
 </div>
-<form id='journey_form' action='#' method='POST'>
+<form id='journey_form' action='journey_planner.php' method='POST'>
 <div class="journey_planner">
     <ul>
 
@@ -62,13 +62,13 @@ include_once $include_folder . '/header.php';
 
         <div class="leavingfrom">
             <label for="starting_station">Leaving from</label>
-            <input type="text" placeholder="Starting Station" id="origin" name="starting_Station" />
+            <input type="text" placeholder="Starting Station" id="origin" name="starting_station" />
         </div>
 
 
         <div class="goingto">
             <label for="destination">Going to</label>
-            <input type="text" placeholder="Destination Station" id="destination" name="destination" />
+            <input type="text" placeholder="Destination Station" id="destination" name="destination_station" />
         </div>
 
 
